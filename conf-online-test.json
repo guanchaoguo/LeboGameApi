@@ -1,0 +1,58 @@
+{
+
+  "GAME_API_SUF":         "leboapi",
+  "AGENT_IPS":            ":ips",
+  "AGENT_ORDER_LIST":     "_get_order_list",
+  "GET_ORDER_LIST_SPEED": 1,
+  "GET_ORDER_LIST_MAX":   1000,
+  "MAX_TIME_SPAN":        7,
+  "KEY_MAX_VALID_TIME":   30,
+  "SECURITY_KEY_ENCRYPT": "sha1",
+  "GAME_HOST":            "https://test.h5.lggame.co",
+  "GAME_HOST_PC":         "https://test.pc.lggame.co/game.php",
+  "TEST_USER_COUNT":      10,
+  "WHITELIST":            "agentWhitelist",
+  "GAME_MT_ING":          "game_server_maintaining",
+
+  "DB_MASTER" : {
+    "DB_HOST":     "10.200.124.23",
+    "DB_DATABASE": "lb_livegame_test",
+    "DB_USERNAME": "Mysqladmin",
+    "DB_PASSWORD": "Mysql1707!",
+    "DB_PORT":         "3306",
+    "CHARSET":         "utf8",
+    "SetMaxIdleConns": 100,
+    "SetMaxOpenConns": 1000
+  },
+
+  "DB_SLAVE" : {
+    "DB_HOST":     "10.200.124.24",
+    "DB_DATABASE": "lb_livegame_test",
+    "DB_USERNAME": "Mysqladmin",
+    "DB_PASSWORD": "Mysql1707!",
+    "DB_PORT":         "3306",
+    "CHARSET":         "utf8",
+    "SetMaxIdleConns": 100,
+    "SetMaxOpenConns": 1000
+  },
+
+  "MONGO_DATABASE" :  "live_game",
+  "MONGO_URL" : "mongodb://hhq163:bx123456@10.200.124.23:27017/live_game",
+
+  "REDIS_DEFAULT":{
+    "REDIS_HOST":"10.200.124.21",
+    "REDIS_PASSWORD":"bx123456",
+    "REDIS_PORT": "6379"
+  },
+  "REDIS_MONITOR" : {
+    "REDIS_HOST":"10.200.124.21",
+    "REDIS_PASSWORD":"bx123456",
+    "REDIS_PORT": "6380"
+  },
+  "REDIS_ACCOUNT" : {
+    "REDIS_HOST":"10.200.124.21",
+    "REDIS_PASSWORD":"bx123456",
+    "REDIS_PORT": "6381"
+  }
+
+}

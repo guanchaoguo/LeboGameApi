@@ -1,0 +1,58 @@
+{
+
+  "GAME_API_SUF":         "leboapi",
+  "AGENT_IPS":            ":ips",
+  "AGENT_ORDER_LIST":     "_get_order_list",
+  "GET_ORDER_LIST_SPEED": 1,
+  "GET_ORDER_LIST_MAX":   1000,
+  "MAX_TIME_SPAN":        7,
+  "KEY_MAX_VALID_TIME":   30,
+  "SECURITY_KEY_ENCRYPT": "sha1",
+  "GAME_HOST":            "https://h5.lggame.co",
+  "GAME_HOST_PC":         "https://pc.lggame.co/game.php",
+  "TEST_USER_COUNT":      10,
+  "WHITELIST":            "agentWhitelist",
+  "GAME_MT_ING":          "game_server_maintaining",
+
+  "DB_MASTER" : {
+    "DB_HOST":     "10.200.66.80",
+    "DB_DATABASE": "lb_livegame",
+    "DB_USERNAME": "svr_livegame",
+    "DB_PASSWORD": "yOikuPYpwUL5KjjKod01",
+    "DB_PORT":         "3306",
+    "CHARSET":         "utf8",
+    "SetMaxIdleConns": 100,
+    "SetMaxOpenConns": 1000
+  },
+
+  "DB_SLAVE" : {
+    "DB_HOST":     "10.200.66.81",
+    "DB_DATABASE": "lb_livegame",
+    "DB_USERNAME": "svr_livegame",
+    "DB_PASSWORD": "yOikuPYpwUL5KjjKod01",
+    "DB_PORT":         "3306",
+    "CHARSET":         "utf8",
+    "SetMaxIdleConns": 100,
+    "SetMaxOpenConns": 1000
+  },
+
+  "MONGO_DATABASE" :  "live_game",
+  "MONGO_URL" : "mongodb://lg_web:IhIyMWmawP8WbvJAb6Fw@10.200.66.11:30000,10.200.66.12:30000,10.200.66.13:30000/live_game",
+
+  "REDIS_DEFAULT":{
+    "REDIS_HOST":"10.200.66.72",
+    "REDIS_PASSWORD":"LiveGame2017",
+    "REDIS_PORT": "6379"
+  },
+  "REDIS_MONITOR" : {
+    "REDIS_HOST":"10.200.66.73",
+    "REDIS_PASSWORD":"LiveGame2017",
+    "REDIS_PORT": "6379"
+  },
+  "REDIS_ACCOUNT" : {
+    "REDIS_HOST":"10.200.66.74",
+    "REDIS_PASSWORD":"LiveGame2017",
+    "REDIS_PORT": "6379"
+  }
+
+}

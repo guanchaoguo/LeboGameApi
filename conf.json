@@ -1,0 +1,58 @@
+{
+
+  "GAME_API_SUF":         "leboapi",
+  "AGENT_IPS":            ":ips",
+  "AGENT_ORDER_LIST":     "_get_order_list",
+  "GET_ORDER_LIST_SPEED": 1,
+  "GET_ORDER_LIST_MAX":   1000,
+  "MAX_TIME_SPAN":        7,
+  "KEY_MAX_VALID_TIME":   30,
+  "SECURITY_KEY_ENCRYPT": "sha1",
+  "GAME_HOST":            "http://lebogame-22.dev",
+  "GAME_HOST_PC":         "http://lebogame-pc-22.dev/game.php",
+  "TEST_USER_COUNT":      10,
+  "WHITELIST":            "agentWhitelist",
+  "GAME_MT_ING":          "game_server_maintaining",
+
+  "DB_MASTER" : {
+    "DB_HOST":     "192.168.31.231",
+    "DB_DATABASE": "lb_livegame",
+    "DB_USERNAME": "root",
+    "DB_PASSWORD": "123456",
+    "DB_PORT":         "3306",
+    "CHARSET":         "utf8",
+    "SetMaxIdleConns": 100,
+    "SetMaxOpenConns": 1000
+  },
+
+  "DB_SLAVE" : {
+    "DB_HOST":     "192.168.31.232",
+    "DB_DATABASE": "lb_livegame",
+    "DB_USERNAME": "root",
+    "DB_PASSWORD": "123456",
+    "DB_PORT":         "3306",
+    "CHARSET":         "utf8",
+    "SetMaxIdleConns": 100,
+    "SetMaxOpenConns": 1000
+  },
+
+  "MONGO_DATABASE" :  "live_game",
+  "MONGO_URL" : "mongodb://hhq163:bx123456@192.168.31.233:30000,192.168.31.234:30000,192.168.31.235:30000/live_game",
+
+  "REDIS_DEFAULT":{
+    "REDIS_HOST":"192.168.31.230",
+    "REDIS_PASSWORD":"bx123456",
+    "REDIS_PORT": "6379"
+  },
+  "REDIS_MONITOR" : {
+    "REDIS_HOST":"192.168.31.230",
+    "REDIS_PASSWORD":"bx123456",
+    "REDIS_PORT": "6380"
+  },
+  "REDIS_ACCOUNT" : {
+    "REDIS_HOST":"192.168.31.230",
+    "REDIS_PASSWORD":"bx123456",
+    "REDIS_PORT": "6381"
+  }
+
+}
